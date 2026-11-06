@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost", "phpmyadmin", "tp", "enigmatech");
+$conn = mysqli_connect("localhost", "enigmatech_user", "user", "enigmatech");
 
 if (!$conn) {
     die("0"); 
