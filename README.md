@@ -6,13 +6,7 @@ EnigmaTech est une application web développée dans le cadre d'un projet univer
 
 L'objectif était de concevoir une plateforme de gestion et de supervision destinée aux entreprises spécialisées dans les escape games. L'application permet de centraliser la gestion des jeux, des salles, des dispositifs et des sessions de jeu depuis une interface web.
 
-Le projet comprenait également une partie matérielle : des capteurs connectés installés dans les salles devaient transmettre des informations à l'application afin de permettre aux game masters de suivre le déroulement des sessions.
-
-## État du projet
-
-EnigmaTech est aujourd'hui une version locale de démonstration de l'application web développée dans le cadre du projet de L2 MIAGE.
-
-La partie web et la base de données peuvent être utilisées sans l'installation matérielle d'origine. L'intégration des capteurs et la remontée de mesures réelles ne sont toutefois plus disponibles.
+Le projet comprenait également une partie matérielle : des capteurs connectés installés dans les salles devaient transmettre des informations à l'application afin de permettre aux game masters de suivre le déroulement des sessions. 
 
 ## Concept métier
 
