@@ -40,3 +40,6 @@ Desktop.ini
 # Local database backups
 *.sql.gz
 *.dump
+
+# Database credentials
+/config/database.php
