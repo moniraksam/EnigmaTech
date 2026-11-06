@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
-$username = "enigmatech_user";
-$password = "user";
-$database = "enigmatech";
+$host = "DB_HOST";
+$username = "DB_USER";
+$password = "DB_PASS";
+$database = "DB_NAME";
 
 $conn = new mysqli($host, $username, $password, $database);
 

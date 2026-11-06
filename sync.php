@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost", "enigmatech_user", "user", "enigmatech");
+$conn = new mysqli($host, $username, $password, $database);
 mysqli_set_charset($conn, "utf8");
 
 if (!$conn) {
