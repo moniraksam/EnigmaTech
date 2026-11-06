@@ -1,12 +1,13 @@
 <?php
 
-$conn = new mysqli($host, $username, $password, $database);
+$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 mysqli_set_charset($conn, "utf8");
 
 if (!$conn) {
     die("DB connection failed: " . mysqli_connect_error());
 }
 
+// A adjuster pour la machine qui opère domoticz
 $DOMOTICZ_URL = "http://192.168.4.1:8080";
 $DOMOTICZ_USER = "admin";
 $DOMOTICZ_PASS = "domoticz";
