@@ -1,0 +1,45 @@
+# Environment variables and local configuration
+.env
+.env.*
+!.env.example
+config/local.php
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Logs
+*.log
+php_errorlog
+/logs/
+/storage/logs/
+
+# Cache and temporary files
+/cache/
+/tmp/
+/.phpunit.cache/
+/.phpunit.result.cache
+*.tmp
+*.swp
+*.bak
+*~
+
+# Test and build output
+/coverage/
+/build/
+/dist/
+
+# IDE settings
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local database backups
+*.sql.gz
+*.dump
+
+# Database credentials
+/config/database.php
