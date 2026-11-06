@@ -6,7 +6,19 @@ EnigmaTech est une application web développée dans le cadre d'un projet univer
 
 L'objectif était de concevoir une plateforme de gestion et de supervision destinée aux entreprises spécialisées dans les escape games. L'application permet de centraliser la gestion des jeux, des salles, des dispositifs et des sessions de jeu depuis une interface web.
 
-Le projet comprenait également une partie matérielle : des capteurs connectés installés dans les salles devaient transmettre des informations à l'application afin de permettre aux game masters de suivre le déroulement des sessions. 
+Le projet comprenait également une partie matérielle : des capteurs connectés installés dans les salles devaient transmettre des informations à l'application afin de permettre aux game masters de suivre le déroulement des sessions.
+
+## État actuel du projet
+
+Le projet est aujourd'hui conservé sous la forme d'une version locale de démonstration de l'application web.
+
+Il est important de noter que la partie matérielle du projet n'est plus disponible. L'installation initiale reposait notamment sur un Raspberry Pi, un écran PiFace, Domoticz et différents capteurs et équipements Z-Wave. L'ensemble de ce matériel a été restitué à l'université à la fin du projet.
+
+Par conséquent, la communication avec les dispositifs physiques, la récupération de mesures réelles et leur affichage en temps réel ne sont plus opérationnels.
+
+La version actuelle reste utilisable sans ce matériel : elle permet de naviguer dans l'application, de gérer les différents éléments et de démarrer des sessions de jeu à partir des données présentes dans la base de données. Ces données sont fictives et servent uniquement à la démonstration.
+
+Le déploiement présenté dans ce README concerne donc uniquement la partie web et la base de données. Il ne permet pas de reproduire l'installation matérielle originale.
 
 ## Concept
 
@@ -27,12 +39,6 @@ L'application s'organise autour de plusieurs éléments :
 
 L'objectif initial était de faciliter le suivi des parties par les game masters et de leur permettre de vérifier certaines conditions de jeu grâce aux informations remontées par les dispositifs.
 
-## État du projet
-
-EnigmaTech est aujourd'hui une version locale de démonstration de l'application web développée dans le cadre du projet de L2 MIAGE.
-
-La partie web et la base de données peuvent être utilisées sans l'installation matérielle d'origine. L'intégration des capteurs et la remontée de mesures réelles ne sont toutefois plus disponibles.
-
 ## Technologies et dépendances
 
 Le projet original reposait sur les technologies suivantes :
@@ -47,8 +53,6 @@ Le projet original reposait sur les technologies suivantes :
 - Z-Wave : protocole de communication utilisé par les capteurs et équipements connectés.
 
 Pour lancer la version de démonstration actuelle, seules les dépendances Apache2, PHP et MariaDB/MySQL sont nécessaires.
-
-Domoticz, le Raspberry Pi et les capteurs physiques faisaient partie de l'installation initiale. Le matériel ayant été restitué à l'université à la fin du projet, cette intégration n'est plus disponible dans la version actuelle.
 
 ## Base de données
 
@@ -67,7 +71,7 @@ Les principales tables sont :
 - `communiquer` : relations de communication entre les salles.
 - `valider` : association entre les étapes, les dispositifs et les mesures attendues.
 
-Le fichier pour la création de la base de données et l'insertion de ses donées sont fournies dans le fichier `creabaseEtInsert.sql`.
+Le fichier `creabaseEtInsert.sql` contient les instructions de création de la base de données, des tables et d'insertion des données de démonstration.
 
 Les données présentes sont entièrement fictives. Elles permettent de tester l'application sans avoir besoin des capteurs physiques. On y retrouve plusieurs entreprises, utilisateurs, jeux, salles, dispositifs et mesures simulées.
 
@@ -97,7 +101,7 @@ SELECT * FROM utilisateur;
 
 La colonne `role` permet de distinguer les types de comptes :
 
-- `Admin` : compte administratif, avec accès aux fonctionnalités de gestion.
+- `Admin` : compte administratif.
 - `Gamemaster` : compte destiné au personnel chargé de gérer les sessions de jeu.
 - `Opérateur` : compte associé à un opérateur d'escape game.
 
@@ -119,26 +123,22 @@ Quelques exemples :
 | Gamemaster | emma@enigmaescape.fr | 1234 |
 | Opérateur | leo@darkroom.fr | 1234 |
 
-## Fonctionnalités et limites actuelles
+## Fonctionnalités
 
 La version actuelle permet notamment de :
 
 - Se connecter avec différents types de comptes.
-- Accéder à une interface adaptée au rôle de l'utilisateur.
+- Accéder aux interfaces de l'application.
 - Consulter les entreprises, les utilisateurs et les jeux.
 - Gérer les salles et les étapes des jeux.
 - Démarrer et terminer des sessions de jeu.
 - Consulter les informations enregistrées dans la base de données.
 
-La partie gestion des sessions fonctionne avec les données présentes dans la base.
-
-En revanche, la récupération et l'affichage de données réelles provenant des capteurs ne sont plus opérationnels. L'installation matérielle d'origine, comprenant le Raspberry Pi, Domoticz et les dispositifs Z-Wave, n'est plus disponible depuis la restitution du matériel à l'université.
-
-Les mesures présentes dans la base sont donc des données fictives destinées à illustrer le fonctionnement prévu de la plateforme.
+Les mesures affichées dans la base sont des données de démonstration. La connexion aux capteurs physiques ne fait pas partie de la version actuelle.
 
 ## Installation et déploiement local
 
-L'environnement de développement utilisé actuellement est Ubuntu/Ubuntu sous WSL.
+L'environnement de développement utilisé actuellement est Ubuntu sous WSL.
 
 ### 1. Installer les dépendances
 
@@ -231,4 +231,3 @@ http://enigmatech.local
 ```
 
 La page de connexion permet ensuite d'utiliser les comptes de démonstration présentés dans la section précédente.
-
