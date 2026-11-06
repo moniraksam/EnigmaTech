@@ -18,11 +18,11 @@ Il est important de noter que la partie matérielle du projet n'est plus disponi
 
 Par conséquent, la communication avec les dispositifs physiques, la récupération de mesures réelles et leur affichage en temps réel ne sont plus opérationnels.
 
+Les fichiers `get_duration.php`, `sync.php`, `countdown.sh` ne sont donc pas utilisées dans cette version actuel, et y sont présent comme legacy code de la version avec matérielles.
+
 La version actuelle reste utilisable sans ce matériel : elle permet de naviguer dans l'application, de gérer les différents éléments et de démarrer des sessions de jeu à partir des données présentes dans la base de données. Ces données sont fictives et servent uniquement à la démonstration.
 
 Le déploiement présenté dans ce README concerne donc uniquement la partie web et la base de données. Il ne permet pas de reproduire l'installation matérielle originale.
-
-Les fichiers `get_duration.php`, `sync.php`, `countdown.sh` ne sont donc pas utilisées dans cette version actuel.
 
 ## Fonctionnalités
 
