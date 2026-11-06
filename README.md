@@ -1,6 +1,6 @@
 # EnigmaTech
 
-Une vidéo de demonstration du projet est disponible ici : https://drive.google.com/file/d/1S2vJszXxFWFBfuj3H-RqTqEdoCnHwgT3/view?usp=drive_link
+Une vidéo de demonstration du projet, présenté par des coéquipers est disponible ici : https://drive.google.com/file/d/1S2vJszXxFWFBfuj3H-RqTqEdoCnHwgT3/view?usp=drive_link
 
 ## Présentation du projet
 
