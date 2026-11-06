@@ -22,6 +22,8 @@ La version actuelle reste utilisable sans ce matériel : elle permet de naviguer
 
 Le déploiement présenté dans ce README concerne donc uniquement la partie web et la base de données. Il ne permet pas de reproduire l'installation matérielle originale.
 
+Les fichiers `get_duration.php`, `sync.php`, `countdown.sh` ne sont donc pas utilisées dans cette version actuel.
+
 ## Fonctionnalités
 
 La version actuelle permet notamment de :
