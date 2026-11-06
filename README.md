@@ -20,6 +20,19 @@ La version actuelle reste utilisable sans ce matériel : elle permet de naviguer
 
 Le déploiement présenté dans ce README concerne donc uniquement la partie web et la base de données. Il ne permet pas de reproduire l'installation matérielle originale.
 
+## Fonctionnalités
+
+La version actuelle permet notamment de :
+
+- Se connecter avec différents types de comptes.
+- Accéder aux interfaces de l'application.
+- Consulter les entreprises, les utilisateurs et les jeux.
+- Gérer les salles et les étapes des jeux.
+- Démarrer et terminer des sessions de jeu.
+- Consulter les informations enregistrées dans la base de données.
+
+Les mesures affichées dans la base sont des données de démonstration. La connexion aux capteurs physiques ne fait pas partie de la version actuelle.
+
 ## Concept
 
 EnigmaTech a été imaginé comme une solution B2B destinée aux entreprises exploitant des escape games.
@@ -101,9 +114,10 @@ SELECT * FROM utilisateur;
 
 La colonne `role` permet de distinguer les types de comptes :
 
-- `Admin` : compte administratif.
-- `Gamemaster` : compte destiné au personnel chargé de gérer les sessions de jeu.
-- `Opérateur` : compte associé à un opérateur d'escape game.
+- `Admin` : compte administratif, peut créer de nouvelles sociétés et ajouter des utilisateurs en les associant à la société de son choix.
+- `Gamemaster` : compte destiné au personnel chargé de gérer les sessions de jeu, peut consulter les jeux de sa société, lancer et terminer des sessions de jeu, et suivre leur progression.
+- `Opérateur` : compte associé à un opérateur d'escape game, peut consulter les jeux de sa société et gérer les comptes utilisateurs associés à celle-ci.
+
 
 Tous les comptes de démonstration utilisent le même mot de passe :
 
@@ -122,19 +136,6 @@ Quelques exemples :
 | Admin | admin@enigmatech.fr | 1234 |
 | Gamemaster | emma@enigmaescape.fr | 1234 |
 | Opérateur | leo@darkroom.fr | 1234 |
-
-## Fonctionnalités
-
-La version actuelle permet notamment de :
-
-- Se connecter avec différents types de comptes.
-- Accéder aux interfaces de l'application.
-- Consulter les entreprises, les utilisateurs et les jeux.
-- Gérer les salles et les étapes des jeux.
-- Démarrer et terminer des sessions de jeu.
-- Consulter les informations enregistrées dans la base de données.
-
-Les mesures affichées dans la base sont des données de démonstration. La connexion aux capteurs physiques ne fait pas partie de la version actuelle.
 
 ## Installation et déploiement local
 
