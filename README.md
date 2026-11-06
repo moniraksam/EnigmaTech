@@ -8,8 +8,6 @@ L'objectif était de concevoir une plateforme de gestion et de supervision desti
 
 Le projet comprenait également une partie matérielle : des capteurs connectés installés dans les salles devaient transmettre des informations à l'application afin de permettre aux game masters de suivre le déroulement des sessions.
 
-La version actuelle est une démonstration locale de l'application web, reposant sur une base de données MariaDB contenant des données fictives.
-
 ## État du projet
 
 EnigmaTech est aujourd'hui une version locale de démonstration de l'application web développée dans le cadre du projet de L2 MIAGE.
