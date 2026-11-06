@@ -1,5 +1,7 @@
 # EnigmaTech
 
+Une vidéo de demonstration du projet est disponible ici : https://drive.google.com/file/d/1S2vJszXxFWFBfuj3H-RqTqEdoCnHwgT3/view?usp=drive_link
+
 ## Présentation du projet
 
 EnigmaTech est une application web développée dans le cadre d'un projet universitaire de deuxième année de MIAGE (L2 MIAGE) à l'Université de Toulouse.
@@ -85,6 +87,7 @@ Les principales tables sont :
 - `valider` : association entre les étapes, les dispositifs et les mesures attendues.
 
 Le fichier `creabaseEtInsert.sql` contient les instructions de création de la base de données, des tables et d'insertion des données de démonstration.
+Il est possible de consulter `/docs/BD Enigmatech Mise à jour.pdf` afin d'avoir une consultation de la BD en MCD.
 
 Les données présentes sont entièrement fictives. Elles permettent de tester l'application sans avoir besoin des capteurs physiques. On y retrouve plusieurs entreprises, utilisateurs, jeux, salles, dispositifs et mesures simulées.
 
