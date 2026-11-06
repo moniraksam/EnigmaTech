@@ -8,7 +8,7 @@ L'objectif était de concevoir une plateforme de gestion et de supervision desti
 
 Le projet comprenait également une partie matérielle : des capteurs connectés installés dans les salles devaient transmettre des informations à l'application afin de permettre aux game masters de suivre le déroulement des sessions. 
 
-## Concept métier
+## Concept
 
 EnigmaTech a été imaginé comme une solution B2B destinée aux entreprises exploitant des escape games.
 
@@ -26,6 +26,12 @@ L'application s'organise autour de plusieurs éléments :
 - Sessions : les sessions de jeu peuvent être démarrées et terminées par le personnel.
 
 L'objectif initial était de faciliter le suivi des parties par les game masters et de leur permettre de vérifier certaines conditions de jeu grâce aux informations remontées par les dispositifs.
+
+## État du projet
+
+EnigmaTech est aujourd'hui une version locale de démonstration de l'application web développée dans le cadre du projet de L2 MIAGE.
+
+La partie web et la base de données peuvent être utilisées sans l'installation matérielle d'origine. L'intégration des capteurs et la remontée de mesures réelles ne sont toutefois plus disponibles.
 
 ## Technologies et dépendances
 
